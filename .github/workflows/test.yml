@@ -33,7 +33,7 @@ jobs:
         uses: Cyberboss/install-winget@v1
       - name: Install clang (Windows)
         if: matrix.os == 'windows-latest'
-        run: winget install LLVM.LLVM
+        run: winget install LLVM.LLVM --accept-source-agreements
       - name: Install clang (macOS)
         if: matrix.os == 'macOS-latest'
         run: brew install llvm

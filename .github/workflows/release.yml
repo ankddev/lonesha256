@@ -15,6 +15,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions-rust-lang/setup-rust-toolchain@v1
+      - name: Install clang
+        run: sudo apt-get install clang libclang-dev
       - name: Login with cargo
         run: cargo login ${{ secrets.CRATES_IO_TOKEN }}
       - name: Publish package
