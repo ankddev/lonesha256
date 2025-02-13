@@ -1,0 +1,19 @@
+[package]
+name = "lonesha256"
+version = "1.0.0"
+authors = ["ANKDDEV"]
+description = "Rust bindings for the lonesha256 C library"
+license = "MIT"
+repository = "https://github.com/ankddev/lonesha256/"
+homepage = "https://github.com/ankddev/lonesha256/"
+readme = "README.md"
+edition = "2021"
+links = "lonesha256"
+build = "build.rs"
+
+[build-dependencies]
+bindgen = "0.69"
+cc = "1.0"
+
+[dependencies]
+libc = "0.2"
