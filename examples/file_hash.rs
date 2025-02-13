@@ -16,9 +16,12 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let mut hash = [0u8; 32];
     lonesha256(&mut hash, &buffer)?;
 
-    println!("SHA256 hash of {}: {}", args[1], 
+    println!(
+        "SHA256 hash of {}: {}",
+        args[1],
         hash.iter()
             .map(|b| format!("{:02x}", b))
-            .collect::<String>());
+            .collect::<String>()
+    );
     Ok(())
 }

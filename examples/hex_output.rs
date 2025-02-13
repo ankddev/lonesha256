@@ -1,22 +1,21 @@
 use lonesha256::lonesha256;
 
 fn to_hex_string(hash: &[u8]) -> String {
-    hash.iter()
-        .map(|b| format!("{:02x}", b))
-        .collect()
+    hash.iter().map(|b| format!("{:02x}", b)).collect()
 }
 
 fn to_hex_uppercase(hash: &[u8]) -> String {
-    hash.iter()
-        .map(|b| format!("{:02X}", b))
-        .collect()
+    hash.iter().map(|b| format!("{:02X}", b)).collect()
 }
 
 fn to_hex_grouped(hash: &[u8]) -> String {
     hash.chunks(4)
-        .map(|chunk| chunk.iter()
-            .map(|b| format!("{:02x}", b))
-            .collect::<String>())
+        .map(|chunk| {
+            chunk
+                .iter()
+                .map(|b| format!("{:02x}", b))
+                .collect::<String>()
+        })
         .collect::<Vec<_>>()
         .join(" ")
 }
