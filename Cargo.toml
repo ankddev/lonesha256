@@ -1,6 +1,6 @@
 [package]
 name = "lonesha256"
-version = "1.0.0"
+version = "1.1.0"
 authors = ["ANKDDEV"]
 description = "Rust bindings for the lonesha256 C library"
 license = "MIT"
@@ -10,6 +10,7 @@ readme = "README.md"
 edition = "2021"
 links = "lonesha256"
 build = "build.rs"
+keywords = ["sha256", "hash", "c", "ffi", "bindings"]
 
 [build-dependencies]
 bindgen = "0.69"
