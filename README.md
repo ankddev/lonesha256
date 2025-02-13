@@ -43,6 +43,10 @@ fn main() {
 }
 ```
 
+## Documentation
+
+Library documentation can be found [here](https://docs.rs/lonesha256/latest/lonesha256/)
+
 ## Features
 
 - Lightweight SHA256 implementation
