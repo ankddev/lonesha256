@@ -16,14 +16,18 @@ This crate provides Rust bindings for [lonesha256](https://github.com/BareRose/l
 ## Installation
 
 Add this to your `Cargo.toml`:
-```
+```toml
 [dependencies]
 lonesha256 = "1.0"
+```
+or run this command in your terminal:
+```sh
+cargo add lonesha256
 ```
 
 ## Usage
 
-```
+```rust
 use lonesha256::lonesha256;
 
 fn main() {
@@ -49,13 +53,14 @@ fn main() {
 
 ## Building from Source
 
-1. Clone the repository:
+1. Install `clang`, as said [here](https://rust-lang.github.io/rust-bindgen/requirements.html)
+2. Clone the repository:
 ```
 git clone https://github.com/ankddev/lonesha256
 cd lonesha256
 ```
 
-2. Build:
+3. Build:
 ```
 cargo build --release
 ```
@@ -63,7 +68,7 @@ cargo build --release
 ## Examples
 
 Run the included examples:
-```
+```sh
 cargo run --example sample       # Basic usage
 cargo run --example file_hash   # File hashing
 cargo run --example streaming   # Process data in chunks
@@ -96,4 +101,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgments
 
-- [lonesha256](https://github.com/BareRose/lonesha256) - Original C implementation by BareRose
+- [lonesha256](https://github.com/BareRose/lonesha256) - Original C implementation by [BareRose](https://github.com/BareRose)
