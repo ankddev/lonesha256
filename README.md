@@ -18,7 +18,7 @@ This crate provides Rust bindings for [lonesha256](https://github.com/BareRose/l
 Add this to your `Cargo.toml`:
 ```toml
 [dependencies]
-lonesha256 = "1.0"
+lonesha256 = "1.1.0"
 ```
 or run this command in your terminal:
 ```sh
