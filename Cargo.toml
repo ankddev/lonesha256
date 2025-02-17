@@ -14,7 +14,7 @@ keywords = ["sha256", "hash", "c", "ffi", "bindings"]
 
 [build-dependencies]
 bindgen = "0.71"
-cc = "1.0"
+cc = "1.2"
 
 [dependencies]
 libc = "0.2"
