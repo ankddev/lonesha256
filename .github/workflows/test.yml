@@ -41,6 +41,6 @@ jobs:
         if: matrix.os == 'ubuntu-latest'
         run: sudo apt-get install clang libclang-dev
       - name: Build
-        run: cargo build --verbose
+        run: cargo build --verbose --locked
       - name: Run tests
         run: cargo test --verbose
