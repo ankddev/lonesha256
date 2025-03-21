@@ -5,7 +5,7 @@
 [![Crates.io](https://img.shields.io/crates/v/lonesha256)](https://crates.io/crates/lonesha256)
 [![Crates.io](https://img.shields.io/crates/d/lonesha256)](https://crates.io/crates/lonesha256)
 
-Rust bindings for the lonesha256 C library - a portable, endian-proof, single-file SHA256 implementation
+Rust bindings for the lonesha256 C library - a portable, endian-proof, single-file SHA256 implementation.
 
 </div>
 
