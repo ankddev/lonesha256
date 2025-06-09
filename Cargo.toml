@@ -13,7 +13,7 @@ build = "build.rs"
 keywords = ["sha256", "hash", "c", "ffi", "bindings"]
 
 [build-dependencies]
-bindgen = "0.71"
+bindgen = "0.72"
 cc = "1.2"
 
 [dependencies]
